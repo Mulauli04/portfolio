@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Professional certificates, Microsoft certifications, training and internship achievements of Netshamutshedzi Mulauli."
+    >
+
+    <title>Certificates | Netshamutshedzi Mulauli</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<button
+    class="mobile-menu-btn"
+    id="mobileMenuBtn"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-profile">
+
+        <div class="profile-image-wrapper">
+
+            <img
+                src="assets/images/profile-photo.jpg"
+                alt="Netshamutshedzi Mulauli"
+                class="profile-image"
+            >
+
+        </div>
+
+
+        <h2>
+            Netshamutshedzi<br>
+            Mulauli
+        </h2>
+
+
+        <p>
+            Computer Science Graduate
+        </p>
+
+
+        <div class="social-links">
+
+            <a
+                href="https://github.com/Mulauli04"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/mulauli-netshamutshedzi-652450277"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="sidebar-nav">
+
+        <a href="index.html" class="nav-link">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+
+
+        <a href="about.html" class="nav-link">
+            <i class="fa-regular fa-user"></i>
+            <span>About</span>
+        </a>
+
+
+        <a href="skills.html" class="nav-link">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+        </a>
+
+
+        <a href="resume.html" class="nav-link">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Resume</span>
+        </a>
+
+
+        <a href="certificates.html" class="nav-link active">
+            <i class="fa-solid fa-award"></i>
+            <span>Certificates</span>
+        </a>
+
+
+        <a href="projects.html" class="nav-link">
+            <i class="fa-regular fa-folder"></i>
+            <span>Projects</span>
+        </a>
+
+
+        <a href="education.html" class="nav-link">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Education</span>
+        </a>
+
+
+        <a href="contact.html" class="nav-link">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+
+    </nav>
+
+
+    <!-- =================================================
+         SIDEBAR FOOTER
+    ================================================== -->
+
+    <div class="sidebar-footer">
+
+        <div class="theme-switcher">
+
+            <i class="fa-regular fa-moon"></i>
+
+
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                aria-label="Toggle dark mode"
+            >
+                <span></span>
+            </button>
+
+
+            <i class="fa-regular fa-sun"></i>
+
+        </div>
+
+
+        <p>
+            © <span id="currentYear"></span>
+            Netshamutshedzi Mulauli.<br>
+            All rights reserved.
+        </p>
+
+    </div>
+
+</aside>
+
+
+<!-- =====================================================
+     MOBILE OVERLAY
+===================================================== -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay"
+></div>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content certificates-main">
+
+
+    <!-- =================================================
+         OPEN TO WORK BAR
+    ================================================== -->
+
+    <section class="availability-bar">
+
+        <div class="availability-status">
+
+            <span class="status-dot"></span>
+
+            <strong>
+                Open to work
+            </strong>
+
+        </div>
+
+
+        <div class="availability-divider"></div>
+
+
+        <p>
+            Graduate position, Junior role, Internship and other opportunities
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         PAGE HEADER
+    ================================================== -->
+
+    <section class="certificates-header">
+
+        <div>
+
+            <p class="section-label">
+                CERTIFICATES
+            </p>
+
+
+            <h1>
+                My <span>Certificates</span>
+            </h1>
+
+
+            <p>
+                A collection of my professional certifications,
+                technical achievements, training programmes and internship experience.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SEARCH + FILTERS
+    ================================================== -->
+
+    <section class="certificate-controls">
+
+
+        <!-- SEARCH -->
+
+        <div class="certificate-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="certificateSearch"
+                placeholder="Search certificates..."
+                aria-label="Search certificates"
+            >
+
+        </div>
+
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="certificate-filters">
+
+            <button
+                class="certificate-filter active"
+                data-filter="all"
+            >
+                All
+            </button>
+
+
+            <button
+                class="certificate-filter"
+                data-filter="development"
+            >
+                Development
+            </button>
+
+
+            <button
+                class="certificate-filter"
+                data-filter="microsoft"
+            >
+                Microsoft
+            </button>
+
+
+            <button
+                class="certificate-filter"
+                data-filter="cybersecurity"
+            >
+                Cybersecurity
+            </button>
+
+
+            <button
+                class="certificate-filter"
+                data-filter="professional"
+            >
+                Professional
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CERTIFICATE GRID
+    ================================================== -->
+
+    <section
+        class="certificates-grid"
+        id="certificatesGrid"
+    >
+
+
+        <!-- =================================================
+             1. MICROSOFT AZURE AI FUNDAMENTALS
+        ================================================== -->
+
+        <article
+            class="certificate-card"
+            data-category="microsoft"
+            data-title="microsoft certified azure ai fundamentals"
+        >
+
+            <div class="certificate-image">
+
+                <img
+                    src="assets/images/certificates/certificate-2.jpg"
+                    alt="Microsoft Certified Azure AI Fundamentals"
+                >
+
+
+                <span
+                    class="certificate-category training-badge"
+                >
+                    Microsoft
+                </span>
+
+            </div>
+
+
+            <div class="certificate-card-body">
+
+                <h2>
+                    Microsoft Certified: Azure AI Fundamentals
+                </h2>
+
+
+                <p class="certificate-issuer">
+                    Microsoft
+                </p>
+
+
+                <div class="certificate-meta">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Earned 10 July 2026
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="assets/images/certificates/certificate-2.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-certificate-btn"
+                >
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    View Certificate
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             2. MICROSOFT AZURE AI APPS AND AGENTS
+        ================================================== -->
+
+        <article
+            class="certificate-card"
+            data-category="microsoft"
+            data-title="microsoft certified azure ai apps and agents developer associate"
+        >
+
+            <div class="certificate-image">
+
+                <img
+                    src="assets/images/certificates/microsoft-azure-ai-apps-agents.jpg"
+                    alt="Microsoft Certified Azure AI Apps and Agents Developer Associate"
+                >
+
+
+                <span
+                    class="certificate-category training-badge"
+                >
+                    Microsoft
+                </span>
+
+            </div>
+
+
+            <div class="certificate-card-body">
+
+                <h2>
+                    Microsoft Certified: Azure AI Apps and Agents Developer Associate
+                </h2>
+
+
+                <p class="certificate-issuer">
+                    Microsoft
+                </p>
+
+
+                <div class="certificate-meta">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Earned 30 July 2026
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="assets/images/certificates/microsoft-azure-ai-apps-agents.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-certificate-btn"
+                >
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    View Certificate
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             3. MICROSOFT 365 COPILOT
+        ================================================== -->
+
+        <article
+            class="certificate-card"
+            data-category="microsoft"
+            data-title="microsoft 365 certified copilot and agent administration fundamentals"
+        >
+
+            <div class="certificate-image">
+
+                <img
+                    src="assets/images/certificates/microsoft-copilot and agent admin.jpg.jpeg"
+                    alt="Microsoft 365 Certified Copilot and Agent Administration Fundamentals"
+                >
+
+
+                <span
+                    class="certificate-category development-badge"
+                >
+                    Microsoft
+                </span>
+
+            </div>
+
+
+            <div class="certificate-card-body">
+
+                <h2>
+                    Microsoft 365 Certified: Copilot and Agent Administration Fundamentals
+                </h2>
+
+
+                <p class="certificate-issuer">
+                    Microsoft
+                </p>
+
+
+                <div class="certificate-meta">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Earned 22 August 2026
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="assets/images/certificates/microsoft-copilot and agent admin.jpg.jpeg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-certificate-btn"
+                >
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    View Certificate
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             4. MICROSOFT AZURE COSMOS DB
+        ================================================== -->
+
+        <article
+            class="certificate-card"
+            data-category="microsoft"
+            data-title="microsoft certified azure cosmos db developer specialty"
+        >
+
+            <div class="certificate-image">
+
+                <img
+                    src="assets/images/certificates/microsoft-azure-cosmos-db.jpg"
+                    alt="Microsoft Certified Azure Cosmos DB Developer Specialty"
+                >
+
+
+                <span
+                    class="certificate-category development-badge"
+                >
+                    Microsoft
+                </span>
+
+            </div>
+
+
+            <div class="certificate-card-body">
+
+                <h2>
+                    Microsoft Certified: Azure Cosmos DB Developer Specialty
+                </h2>
+
+
+                <p class="certificate-issuer">
+                    Microsoft
+                </p>
+
+
+                <div class="certificate-meta">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Earned 29 August 2026
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="assets/images/certificates/microsoft-azure-cosmos-db.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-certificate-btn"
+                >
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    View Certificate
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             5. CODSOFT PYTHON INTERNSHIP
+        ================================================== -->
+
+        <article
+            class="certificate-card"
+            data-category="development"
+            data-title="codsoft python programming virtual internship"
+        >
+
+            <div class="certificate-image">
+
+                <img
+                    src="assets/images/certificates/codsoft-python-internship.jpg"
+                    alt="CodSoft Python Programming Virtual Internship Certificate"
+                >
+
+
+                <span
+                    class="certificate-category development-badge"
+                >
+                    Development
+                </span>
+
+            </div>
+
+
+            <div class="certificate-card-body">
+
+                <h2>
+                    Python Programming Virtual Internship
+                </h2>
+
+
+                <p class="certificate-issuer">
+                    CodSoft
+                </p>
+
+
+                <div class="certificate-meta">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        January – February 2024
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="assets/images/certificates/codsoft-python-internship.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-certificate-btn"
+                >
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    View Certificate
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+
+        <!-- =================================================
+             6. MWR VIRTUAL INTERNSHIP
+        ================================================== -->
+
+        <article
+            class="certificate-card"
+            data-category="cybersecurity"
+            data-title="mwr virtual internship 16 weeks 2026"
+        >
+
+            <div class="certificate-image">
+
+                <img
+                    src="assets/images/certificates/mwr-virtual-internship.jpg"
+                    alt="MWR Virtual Internship Certificate"
+                >
+
+
+                <span
+                    class="certificate-category professional-badge"
+                >
+                    Cybersecurity
+                </span>
+
+            </div>
+
+
+            <div class="certificate-card-body">
+
+                <h2>
+                    MWR Virtual Internship
+                </h2>
+
+
+                <p class="certificate-issuer">
+                    MWR
+                </p>
+
+
+                <div class="certificate-meta">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        2 March 2026 – 16 Weeks
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="assets/images/certificates/mwr-virtual-internship.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="view-certificate-btn"
+                >
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    View Certificate
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+    <!-- =================================================
+         NO RESULTS MESSAGE
+    ================================================== -->
+
+    <div
+        class="certificate-empty"
+        id="certificateEmpty"
+    >
+
+        <i class="fa-regular fa-folder-open"></i>
+
+
+        <h2>
+            No certificates found
+        </h2>
+
+
+        <p>
+            Try another search or certificate category.
+        </p>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

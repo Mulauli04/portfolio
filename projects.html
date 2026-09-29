@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Software development, cybersecurity and technical projects by Netshamutshedzi Mulauli."
+    >
+
+    <title>Projects | Netshamutshedzi Mulauli</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<button
+    class="mobile-menu-btn"
+    id="mobileMenuBtn"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-profile">
+
+        <div class="profile-image-wrapper">
+
+            <img
+                src="assets/images/profile-photo.jpg"
+                alt="Netshamutshedzi Mulauli"
+                class="profile-image"
+            >
+
+        </div>
+
+        <h2>
+            Netshamutshedzi<br>
+            Mulauli
+        </h2>
+
+        <p>
+            Computer Science Graduate
+        </p>
+
+
+        <div class="social-links">
+
+            <a
+                href="https://github.com/Mulauli04"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/mulauli-netshamutshedzi-652450277"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="sidebar-nav">
+
+        <a href="index.html" class="nav-link">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+
+        <a href="about.html" class="nav-link">
+            <i class="fa-regular fa-user"></i>
+            <span>About</span>
+        </a>
+
+        <a href="skills.html" class="nav-link">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+        </a>
+
+        <a href="resume.html" class="nav-link">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Resume</span>
+        </a>
+
+        <a href="certificates.html" class="nav-link">
+            <i class="fa-solid fa-award"></i>
+            <span>Certificates</span>
+        </a>
+
+        <a href="projects.html" class="nav-link active">
+            <i class="fa-regular fa-folder"></i>
+            <span>Projects</span>
+        </a>
+
+        <a href="education.html" class="nav-link">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Education</span>
+        </a>
+
+        <a href="contact.html" class="nav-link">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+
+    </nav>
+
+
+    <!-- SIDEBAR FOOTER -->
+
+    <div class="sidebar-footer">
+
+        <div class="theme-switcher">
+
+            <i class="fa-regular fa-moon"></i>
+
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                aria-label="Toggle dark mode"
+            >
+                <span></span>
+            </button>
+
+            <i class="fa-regular fa-sun"></i>
+
+        </div>
+
+        <p>
+            © <span id="currentYear"></span>
+            Netshamutshedzi Mulauli.<br>
+            All rights reserved.
+        </p>
+
+    </div>
+
+</aside>
+
+
+<!-- MOBILE OVERLAY -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay"
+></div>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content projects-main">
+
+
+    <!-- =================================================
+         OPEN TO WORK
+    ================================================== -->
+
+    <section class="availability-bar">
+
+        <div class="availability-status">
+
+            <span class="status-dot"></span>
+
+            <strong>
+                Open to work
+            </strong>
+
+        </div>
+
+
+        <div class="availability-divider"></div>
+
+
+        <p>
+            Graduate position, Junior role, Internship and other opportunities
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         PAGE HEADER
+    ================================================== -->
+
+    <section class="projects-header">
+
+        <div class="projects-heading">
+
+            <p class="section-label">
+                PROJECTS
+            </p>
+
+
+            <h1>
+                My <span>Projects</span>
+            </h1>
+
+
+            <p>
+                A collection of my software development,
+                cybersecurity and technical projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SEARCH + FILTERS + SORT
+    ================================================== -->
+
+    <section class="project-controls">
+
+
+        <!-- SEARCH -->
+
+        <div class="project-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="projectSearch"
+                placeholder="Search projects..."
+                aria-label="Search projects"
+            >
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="project-filters">
+
+            <button
+                class="project-filter active"
+                data-filter="all"
+            >
+                All
+            </button>
+
+
+            <button
+                class="project-filter"
+                data-filter="fullstack"
+            >
+                Full-Stack
+            </button>
+
+
+            <button
+                class="project-filter"
+                data-filter="cybersecurity"
+            >
+                Cybersecurity
+            </button>
+
+
+            <button
+                class="project-filter"
+                data-filter="networking"
+            >
+                Networking
+            </button>
+
+
+            <button
+                class="project-filter"
+                data-filter="desktop"
+            >
+                Desktop App
+            </button>
+
+        </div>
+
+
+        <!-- SORT -->
+
+        <div class="project-sort">
+
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+
+            <select
+                id="projectSort"
+                aria-label="Sort projects"
+            >
+
+                <option value="default">
+                    Featured
+                </option>
+
+                <option value="az">
+                    A – Z
+                </option>
+
+                <option value="za">
+                    Z – A
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         PROJECT GRID
+    ================================================== -->
+
+    <section
+        class="projects-grid"
+        id="projectsGrid"
+    >
+
+
+        <!-- =================================================
+             1. EDUCORE 360
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="fullstack"
+            data-title="educore 360 school management system"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/projects/educore360.jpg"
+                    alt="EduCore 360 School Management System"
+                >
+
+                <span class="project-status frontend-complete">
+
+                    <span></span>
+
+                    Frontend Complete
+
+                </span>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <h2>
+                    EduCore 360
+                </h2>
+
+                <p class="project-description">
+                    A modern school management system with
+                    role-based dashboards for administrators,
+                    teachers, parents, students and other school users.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Tailwind CSS</span>
+                    <span>Vite</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-view-btn"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="https://github.com/Mulauli04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-github-btn"
+                    >
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             2. HOSPITAL MANAGEMENT SYSTEM
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="fullstack"
+            data-title="hospital management system"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/projects/hospital-system.jpg"
+                    alt="Hospital Management System"
+                >
+
+                <span class="project-status development-status">
+
+                    <span></span>
+
+                    In Development
+
+                </span>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <h2>
+                    Hospital Management System
+                </h2>
+
+                <p class="project-description">
+                    A full-stack hospital management platform
+                    for patients, doctors, reception, appointments,
+                    medical records and administration.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>PostgreSQL</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-view-btn"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="https://github.com/Mulauli04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-github-btn"
+                    >
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             3. E-COMMERCE PLATFORM
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="fullstack"
+            data-title="ecommerce platform"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/projects/ecommerce.jpg"
+                    alt="E-Commerce Platform"
+                >
+
+                <span class="project-status development-status">
+
+                    <span></span>
+
+                    In Development
+
+                </span>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <h2>
+                    E-Commerce Platform
+                </h2>
+
+                <p class="project-description">
+                    An online shopping platform with products,
+                    customer accounts, shopping cart, checkout,
+                    order management and administration.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Node.js</span>
+                    <span>PostgreSQL</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-view-btn"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="https://github.com/Mulauli04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-github-btn"
+                    >
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             4. SOC / CYBERSECURITY HOMELAB
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="cybersecurity networking"
+            data-title="soc cybersecurity homelab wazuh snort pfsense nessus"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/projects/soc-homelab.jpg"
+                    alt="SOC Cybersecurity Homelab"
+                >
+
+                <span class="project-status active-status">
+
+                    <span></span>
+
+                    Active Lab
+
+                </span>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <h2>
+                    SOC / Cybersecurity Homelab
+                </h2>
+
+                <p class="project-description">
+                    A virtual security operations lab used for
+                    security monitoring, network protection,
+                    vulnerability assessment and security testing.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>Wazuh</span>
+                    <span>Snort</span>
+                    <span>pfSense</span>
+                    <span>Nessus</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-view-btn"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="https://github.com/Mulauli04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-github-btn"
+                    >
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             5. TICKETING SYSTEM
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="fullstack"
+            data-title="ticketing system help desk"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/projects/ticketing-system.jpg"
+                    alt="Ticketing System"
+                >
+
+                <span class="project-status development-status">
+
+                    <span></span>
+
+                    Team Project
+
+                </span>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <h2>
+                    Ticketing System
+                </h2>
+
+                <p class="project-description">
+                    A helpdesk ticketing platform featuring
+                    ticket lifecycle management, SLA tracking,
+                    audit logs, comments and role-based workflows.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>PostgreSQL</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-view-btn"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="https://github.com/Mulauli04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-github-btn"
+                    >
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             6. ANSU
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="desktop"
+            data-title="ansu personal voice assistant"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/projects/ansu-assistant.jpg"
+                    alt="ANSU Personal Voice Assistant"
+                >
+
+                <span class="project-status prototype-status">
+
+                    <span></span>
+
+                    Prototype
+
+                </span>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <h2>
+                    ANSU — Personal Assistant
+                </h2>
+
+                <p class="project-description">
+                    A local Windows voice assistant designed
+                    for application control, system commands,
+                    reminders and everyday desktop productivity.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>Python</span>
+                    <span>Voice</span>
+                    <span>Automation</span>
+                    <span>Windows</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-view-btn"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="https://github.com/Mulauli04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-github-btn"
+                    >
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             7. NETWORKING / ACTIVE DIRECTORY LAB
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="networking cybersecurity"
+            data-title="active directory windows server networking lab"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/projects/networking-lab.jpg"
+                    alt="Networking and Active Directory Lab"
+                >
+
+                <span class="project-status active-status">
+
+                    <span></span>
+
+                    Active Lab
+
+                </span>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <h2>
+                    Networking & Active Directory Lab
+                </h2>
+
+                <p class="project-description">
+                    A Windows Server and networking lab for
+                    practising Active Directory, user management,
+                    network configuration and system administration.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>Windows Server</span>
+                    <span>Active Directory</span>
+                    <span>Networking</span>
+                    <span>VirtualBox</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="#"
+                        class="project-view-btn"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="https://github.com/Mulauli04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-github-btn"
+                    >
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             8. PERSONAL PORTFOLIO
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-category="fullstack"
+            data-title="personal portfolio website"
+        >
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/projects/portfolio.jpg"
+                    alt="Personal Portfolio Website"
+                >
+
+                <span class="project-status development-status">
+
+                    <span></span>
+
+                    In Development
+
+                </span>
+
+            </div>
+
+
+            <div class="project-body">
+
+                <h2>
+                    Personal Portfolio Website
+                </h2>
+
+                <p class="project-description">
+                    A professional portfolio website showcasing
+                    my skills, projects, qualifications,
+                    certificates and career profile.
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+
+                </div>
+
+
+                <div class="project-actions">
+
+                    <a
+                        href="index.html"
+                        class="project-view-btn"
+                    >
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="https://github.com/Mulauli04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-github-btn"
+                    >
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+    <!-- =================================================
+         NO RESULTS
+    ================================================== -->
+
+    <div
+        class="project-empty"
+        id="projectEmpty"
+    >
+
+        <i class="fa-regular fa-folder-open"></i>
+
+        <h2>
+            No projects found
+        </h2>
+
+        <p>
+            Try another search or project category.
+        </p>
+
+    </div>
+
+</main>
+
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

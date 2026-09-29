@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Resume of Netshamutshedzi Mulauli - Computer Science graduate with experience in software development, IT support, networking, cybersecurity and research."
+    >
+
+    <title>
+        Resume | Netshamutshedzi Mulauli
+    </title>
+
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- MAIN CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     MOBILE MENU BUTTON
+========================================================= -->
+
+<button
+    class="mobile-menu-btn"
+    id="mobileMenuBtn"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<aside
+    class="sidebar"
+    id="sidebar"
+>
+
+
+    <!-- PROFILE -->
+
+    <div class="sidebar-profile">
+
+        <div class="profile-image-wrapper">
+
+            <img
+                src="assets/images/profile-photo.jpg"
+                alt="Netshamutshedzi Mulauli"
+                class="profile-image"
+            >
+
+        </div>
+
+
+        <h2>
+            Netshamutshedzi
+            <br>
+            Mulauli
+        </h2>
+
+
+        <p>
+            Computer Science Graduate
+        </p>
+
+
+        <!-- SOCIAL -->
+
+        <div class="social-links">
+
+            <a
+                href="https://github.com/Mulauli04"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/mulauli-netshamutshedzi-652450277"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="sidebar-nav">
+
+
+        <a
+            href="index.html"
+            class="nav-link"
+        >
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Home
+            </span>
+        </a>
+
+
+        <a
+            href="about.html"
+            class="nav-link"
+        >
+            <i class="fa-regular fa-user"></i>
+
+            <span>
+                About
+            </span>
+        </a>
+
+
+        <a
+            href="skills.html"
+            class="nav-link"
+        >
+            <i class="fa-solid fa-code"></i>
+
+            <span>
+                Skills
+            </span>
+        </a>
+
+
+        <a
+            href="resume.html"
+            class="nav-link active"
+        >
+            <i class="fa-regular fa-file-lines"></i>
+
+            <span>
+                Resume
+            </span>
+        </a>
+
+
+        <a
+            href="certificates.html"
+            class="nav-link"
+        >
+            <i class="fa-solid fa-award"></i>
+
+            <span>
+                Certificates
+            </span>
+        </a>
+
+
+        <a
+            href="projects.html"
+            class="nav-link"
+        >
+            <i class="fa-regular fa-folder"></i>
+
+            <span>
+                Projects
+            </span>
+        </a>
+
+
+        <a
+            href="education.html"
+            class="nav-link"
+        >
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <span>
+                Education
+            </span>
+        </a>
+
+
+        <a
+            href="contact.html"
+            class="nav-link"
+        >
+            <i class="fa-regular fa-envelope"></i>
+
+            <span>
+                Contact
+            </span>
+        </a>
+
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         SIDEBAR FOOTER
+    ====================================================== -->
+
+    <div class="sidebar-footer">
+
+
+        <div class="theme-switcher">
+
+            <i class="fa-regular fa-moon"></i>
+
+
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                aria-label="Toggle theme"
+            >
+                <span></span>
+            </button>
+
+
+            <i class="fa-regular fa-sun"></i>
+
+        </div>
+
+
+        <p>
+            © <span id="currentYear"></span>
+            Netshamutshedzi Mulauli.
+            All rights reserved.
+        </p>
+
+    </div>
+
+
+</aside>
+
+
+
+<!-- MOBILE OVERLAY -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay"
+></div>
+
+
+
+<!-- =========================================================
+     MAIN RESUME PAGE
+========================================================= -->
+
+<main class="main-content resume-redesign">
+
+
+    <!-- =====================================================
+         RESUME HERO
+    ====================================================== -->
+
+    <section class="resume-hero">
+
+
+        <div class="resume-hero-overlay"></div>
+
+
+        <div class="resume-hero-content">
+
+            <p class="resume-hero-label">
+                RESUME
+            </p>
+
+
+            <h1>
+                My <span>Resume</span>
+            </h1>
+
+
+            <p>
+                A detailed overview of my education,
+                experience and professional background.
+                Download or view my full CV below.
+            </p>
+
+        </div>
+
+
+
+        <!-- BUTTONS -->
+
+        <div class="resume-hero-actions">
+
+
+            <a
+                href="assets/documents/Netshamutshedzi_Mulauli_CV.pdf"
+                download
+                class="resume-hero-btn primary"
+            >
+
+                <i class="fa-solid fa-download"></i>
+
+                Download CV
+
+            </a>
+
+
+            <a
+                href="assets/documents/Netshamutshedzi_Mulauli_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="resume-hero-btn outline"
+            >
+
+                <i class="fa-regular fa-eye"></i>
+
+                View CV
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         AVAILABILITY BAR
+    ====================================================== -->
+
+    <section class="resume-availability">
+
+
+        <div class="resume-availability-left">
+
+            <div class="resume-work-status">
+
+                <span class="status-dot"></span>
+
+                <strong>
+                    Open to work
+                </strong>
+
+            </div>
+
+
+            <div class="resume-status-divider"></div>
+
+
+            <p>
+                Graduate position, Junior role,
+                Internship and other opportunities
+            </p>
+
+        </div>
+
+
+
+        <div class="resume-availability-right">
+
+
+            <div class="resume-availability-detail">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>
+                    South Africa
+                </span>
+
+            </div>
+
+
+            <div class="resume-availability-detail">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <span>
+                    Available for opportunities
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTENT GRID
+    ====================================================== -->
+
+    <section class="resume-new-layout">
+
+
+        <!-- =================================================
+             EDUCATION
+        ================================================== -->
+
+        <article class="resume-new-card education-panel">
+
+
+            <div class="resume-new-heading">
+
+                <div class="resume-heading-icon">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </div>
+
+
+                <h2>
+                    Education
+                </h2>
+
+            </div>
+
+
+
+            <div class="modern-timeline">
+
+
+                <!-- HONOURS -->
+
+                <div class="modern-timeline-item">
+
+
+                    <div class="modern-timeline-dot"></div>
+
+
+                    <div class="modern-year">
+
+                        <strong>
+                            2025
+                        </strong>
+
+                        <span>
+                            NQF Level 8
+                        </span>
+
+                    </div>
+
+
+                    <div class="modern-timeline-content">
+
+                        <h3>
+                            BSc Computer Science (Honours)
+                        </h3>
+
+
+                        <h4>
+                            University of Limpopo
+                        </h4>
+
+
+                        <p>
+                            Completed postgraduate Honours studies
+                            in Computer Science, strengthening my
+                            knowledge in advanced computing and
+                            research methods.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BSC -->
+
+                <div class="modern-timeline-item">
+
+
+                    <div class="modern-timeline-dot"></div>
+
+
+                    <div class="modern-year">
+
+                        <strong>
+                            2023
+                        </strong>
+
+                        <span>
+                            NQF Level 7
+                        </span>
+
+                    </div>
+
+
+                    <div class="modern-timeline-content">
+
+                        <h3>
+                            Bachelor of Science in Computer Science
+                        </h3>
+
+
+                        <h4>
+                            University of Venda
+                        </h4>
+
+
+                        <p>
+                            Completed undergraduate studies in
+                            Computer Science with foundations in
+                            programming, databases, networking,
+                            software development and information systems.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GRADE 12 -->
+
+                <div class="modern-timeline-item">
+
+
+                    <div class="modern-timeline-dot"></div>
+
+
+                    <div class="modern-year">
+
+                        <strong>
+                            2020
+                        </strong>
+
+                        <span>
+                            Grade 12
+                        </span>
+
+                    </div>
+
+
+                    <div class="modern-timeline-content">
+
+                        <h3>
+                            National Senior Certificate
+                        </h3>
+
+
+                        <h4>
+                            Funzwani Secondary School
+                        </h4>
+
+
+                        <p>
+                            Completed secondary education and
+                            developed the academic foundation
+                            required for tertiary study.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BUSINESS ADMIN -->
+
+                <div class="modern-timeline-item">
+
+
+                    <div class="modern-timeline-dot"></div>
+
+
+                    <div class="modern-year">
+
+                        <strong>
+                            2022
+                        </strong>
+
+                        <span>
+                            Professional
+                        </span>
+
+                    </div>
+
+
+                    <div class="modern-timeline-content">
+
+                        <h3>
+                            Business Administration
+                        </h3>
+
+
+                        <h4>
+                            Skills Development Professionals
+                        </h4>
+
+
+                        <p>
+                            Completed a skills programme covering
+                            business administration, communication,
+                            workplace effectiveness and administration
+                            processes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             WORK EXPERIENCE
+        ================================================== -->
+
+        <article class="resume-new-card experience-panel">
+
+
+            <div class="resume-new-heading">
+
+                <div class="resume-heading-icon">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                </div>
+
+
+                <h2>
+                    Work Experience
+                </h2>
+
+            </div>
+
+
+
+            <div class="experience-timeline">
+
+
+                <!-- ICT INTERN -->
+
+                <div class="experience-item">
+
+
+                    <div class="experience-dot"></div>
+
+
+                    <div class="experience-content">
+
+
+                        <div class="experience-top">
+
+                            <span class="experience-date">
+                            </span>
+
+
+                            <span class="experience-type">
+                                Internship
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            ICT Intern
+                        </h3>
+
+
+                        <h4>
+                            Vhembe Central
+                        </h4>
+
+
+                        <ul>
+
+                            <li>
+                                Provided IT support and system maintenance.
+                            </li>
+
+                            <li>
+                                Assisted with network troubleshooting.
+                            </li>
+
+                            <li>
+                                Supported users with hardware and software issues.
+                            </li>
+
+                            <li>
+                                Assisted with technical documentation.
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FULL STACK -->
+
+                <div class="experience-item">
+
+
+                    <div class="experience-dot"></div>
+
+
+                    <div class="experience-content">
+
+
+                        <div class="experience-top">
+
+                            <span class="experience-type">
+                                Internship
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Full-Stack Development Internship
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                Worked on web application development.
+                            </li>
+
+                            <li>
+                                Contributed to frontend and backend tasks.
+                            </li>
+
+                            <li>
+                                Worked with APIs and databases.
+                            </li>
+
+                            <li>
+                                Collaborated with team members.
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROJECTS -->
+
+                <div class="experience-item">
+
+
+                    <div class="experience-dot"></div>
+
+
+                    <div class="experience-content">
+
+
+                        <div class="experience-top">
+
+                            <span class="experience-type">
+                                Project Experience
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Academic & Personal Projects
+                        </h3>
+
+
+                        <ul>
+
+                            <li>
+                                Developed software applications and portfolio projects.
+                            </li>
+
+                            <li>
+                                Conducted research in automatic speech recognition.
+                            </li>
+
+                            <li>
+                                Built cybersecurity and networking lab environments.
+                            </li>
+
+                            <li>
+                                Practised software testing and documentation.
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             CV PREVIEW
+        ================================================== -->
+
+        <aside class="resume-new-card resume-cv-panel">
+
+
+            <div class="resume-new-heading">
+
+                <div class="resume-heading-icon dark-icon">
+
+                    <i class="fa-regular fa-file-lines"></i>
+
+                </div>
+
+
+                <h2>
+                    My CV
+                </h2>
+
+            </div>
+
+
+
+            <div class="modern-cv-preview">
+
+
+                <iframe
+                    src="assets/documents/Netshamutshedzi_Mulauli_CV.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                    title="Netshamutshedzi Mulauli CV"
+                ></iframe>
+
+
+            </div>
+
+
+
+            <div class="modern-cv-actions">
+
+
+                <a
+                    href="assets/documents/Netshamutshedzi_Mulauli_CV.pdf"
+                    download
+                    class="modern-cv-download"
+                >
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download CV (PDF)
+
+                </a>
+
+
+                <a
+                    href="assets/documents/Netshamutshedzi_Mulauli_CV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="modern-cv-view"
+                >
+
+                    <i class="fa-regular fa-eye"></i>
+
+                    Open Full CV
+
+                </a>
+
+
+            </div>
+
+
+        </aside>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
